@@ -1,0 +1,507 @@
+a {
+    color: #EADFDF;
+
+}
+
+body {
+    position: relative;
+    width: 9.9%; 
+    background-color: #788490;
+}
+nav.sidebar, #navicon {
+    visibility: hidden;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+}
+.home{
+    position: relative;
+    top:4em;
+}
+.bg-dark {
+    background-color:black!important;
+}
+.fixed-top {
+    position: relative;
+    width: 1009%;
+}
+.logo {
+    position: relative;
+    margin: 0 0 0 0;
+    width: 101%;
+    height: 90%;
+}
+.logo img{
+    position: relative;
+    height: 250px;
+    width: 1000%;
+}
+.fundoBranco {
+    background-image: url("https://imagens.climatempo.com.br/img_users/2015/10/9498a151a38a25d475c6a96dd3e7b493/656x0.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    overflow: auto;
+    padding: 3em;
+    right: 0;
+    text-align: center;
+    background-size: cover;
+
+    position: relative;
+    top:-3em;
+    left: 50%;
+    width: 900%;
+    height: 1300px;
+    border-style:groove;
+    background-color: #E9E9E9;
+}
+#button {
+    position: relative;
+    top: -3em;
+    left: 75%;
+    width: 100px;
+    height: 40px; 
+}
+h1 {
+    position: relative;
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+    font-family: 'Lobster Two', cursive;
+}
+.titulo {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Old Standard TT', serif;
+    font-family: 'Lobster Two', cursive; 
+}
+p {
+    margin: 15px;
+    font-family: 'Old Standard TT', serif;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Alegreya', serif;
+}
+ul.list-group {
+    position: absolute;
+    width: 20%;
+}
+ul.list-group li{
+    background-color: rgba(23, 21, 21, 0.76);
+    position: relative;
+    top: 10em;
+    height: 5em;
+}
+ul.list-group li {
+    background-color: #002235;
+}
+div.tabela {
+    position: relative;
+    color: black; 
+    left: 35%; 
+    width: 50%;
+    top: -20em;
+}
+div.resolucao {
+    position: absolute;
+    top: 10em;
+    left: 20%;
+    top: 20em;
+    width: 50%;
+    border-color: black;
+    height: 30em;
+}
+div.resolucao strong{
+    position: relative;
+    left: 30%;
+    color: #1A191B;
+    top: 0.4em;
+    font-size: 35px;
+}
+div.resolucao img{
+    position: relative;
+    top:3em;
+}
+div.jogo {
+    position: relative;
+    left: 10%;
+    top: 10em;
+    border-style: double;
+    width: 40em;
+    height: 25em;
+    background: #F4F4F8;
+}
+
+#questao {
+    position: relative;
+    left: 2%;
+}
+
+button {
+    position: relative;
+    width: 40%;
+    height: 80px;
+}
+.tr{ 
+    position: relative;
+    color: white;
+}
+
+@media (max-width:994px) {
+    nav {
+        visibility:hidden;
+    }
+
+   *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style-position: inside;
+    }
+   
+    .nav-toggle {
+        display: block;
+        padding: 10px 10px 15px 10px;
+        background: #fff;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 50;
+    }
+    .hamburger {
+        width: 1.08em;
+        position: relative;
+        display: inline-block;
+        height: 0.6em;
+        font-size: 1.2em;
+        background: #fff;
+    }
+    .hamburger span {
+        width: 100%;
+        background: #000;
+        display: block;
+        position: absolute;
+        left: 0px;
+        height: 0.185em;
+        border-radius: 1.2px;
+        transition: 0.5s all;
+    }
+    .hamburger span:nth-child(1) {
+        top: 0px;
+    }
+    .hamburger span:nth-child(2) {
+        top: 0.36em;
+    }
+    .hamburger span:nth-child(3) {
+        top: 0.73em;
+    }
+    .sidebar {
+        width: 40%;
+        height: 40%;
+        position: fixed;
+        background: #000;
+        top: 0px;
+        left: 0px;
+        z-index: 5;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.2s all;
+        -webkit-transition: 0.2s all;
+        -ms-transition: 0.2s all;
+        -moz-transition: 0.2s all;
+        -o-transition: 0.2s all;
+    }
+    #navicon {
+        display: none;
+    }
+    #navicon:checked ~ .sidebar {
+        visibility: visible;
+        opacity: 1;
+    }
+    #navicon:checked ~ .nav-toggle > .hamburger span {
+        top: 0.36em;
+    }
+    #navicon:checked ~ .nav-toggle > .hamburger span:nth-child(1) {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+    }
+    #navicon:checked ~ .nav-toggle > .hamburger span:nth-child(2) {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+    }
+    #navicon:checked ~ .nav-toggle > .hamburger span:nth-child(3) {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+    }
+    .nav-hamburger{
+        position: absolute;
+        top:4em;
+    }
+}
+#quisz {
+    position: relative;
+    left: 20%;
+    top: -3em;
+}
+div#image {
+    background-image: url('foto/planeta.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
+    background-color: rgba(111, 149, 245, 0.1);
+}
+#B1 {
+    position: relative;
+    background-color: #394D61;
+    width: 101%;
+    height: 15%;
+    left: -0.5%;
+    top: 19.5em;
+}
+#B2 {
+    position: relative;
+    background-color: #394D61;
+    width: 62%;
+    height: 15%;
+    left: 10%;
+    top: 30.5em;
+}
+div#image2 {
+    background-image: url('foto/image2.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
+    background-color: rgba(111, 149, 245, 0.1);
+}
+div#image3 {
+    background-image: url('foto/image3.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
+    background-color: rgba(111, 149, 245, 0.1);
+}
+div#image4 {
+    background-image: url('foto/image4.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
+    background-color: rgba(111, 149, 245, 0.1);
+}
+div#game {
+    background-image: url('foto/game.png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
+    background-color: rgba(111, 149, 245, 0.1);
+}
+#seleciona{
+    position: fixed;
+    top: 8em;
+    left: 5.5%;
+}
+
+h5#z1 {
+    position: fixed;
+    top: 21em;
+    left: 40%;
+}
+h5#z2 {
+    position: fixed;
+    top: 21em;
+    left: 45%;
+}
+h5#z3 {
+    position: fixed;
+    top: 21em;
+    left: 50%;
+}
+h5#z4 {
+    position: fixed;
+    top: 21em;
+    left: 55%;
+}
+h5#z5 {
+    position: fixed;
+    top: 21em;
+    left: 60%;
+}
+h5#z6 {
+    position: fixed;
+    top: 21em;
+    left: 65%;
+}
+h5#z7 {
+    position: fixed;
+    top: 21em;
+    left: 70%;
+}
+
+h5#x1 {
+    position: fixed;
+    top: 20em;
+    left: 38%;
+}
+h5#x2 {
+    position: fixed;
+    top: 18em;
+    left: 38%;
+}
+h5#x3 {
+    position: fixed;
+    top: 16em;
+    left: 38%;
+}
+h5#x4 {
+    position: fixed;
+    top: 14em;
+    left: 38%;
+}
+h5#x5 {
+    position: fixed;
+    top: 12em;
+    left: 38%;
+}
+h5#x6 {
+    position: fixed;
+    top: 10em;
+    left: 38%;
+}
+h5#x7 {
+    position: fixed;
+    top: 8em;
+    left: 38%;
+}
+h5#x8 {
+    position: fixed;
+    top: 6em;
+    left: 38%;
+}
+
+div#a1 {
+    position: fixed;
+    width: 2%;
+    height: 5%;
+    left: 40.5%;
+    top: 24em;
+    background-color: rgba(0, 0, 0, 0.952);
+}
+div#a2 {
+    position: fixed;
+    width: 2%;
+    height: 5%;
+    left: 46%;
+    top: 24em;
+    background-color: rgba(0, 0, 0, 0.952);
+}
+div#a3 {
+    position: fixed;
+    width: 2%;
+    height: 5%;
+    left: 51.5%;
+    top: 24em;
+    background-color: rgba(0, 0, 0, 0.952);
+}
+div#a4 {
+    position: fixed;
+    width: 2%;
+    height: 5%;
+    left: 57%;
+    top: 24em;
+    background-color: rgba(0, 0, 0, 0.952);
+}
+div#a5 {
+    position: fixed;
+    width: 2%;
+    height: 5%;
+    left: 62.5%;
+    top: 24em;
+    background-color: rgba(0, 0, 0, 0.952);
+}
+div#a6 {
+    position: fixed;
+    width: 2%;
+    height: 5%;
+    left: 68%;
+    top: 24em;
+    background-color: rgba(0, 0, 0, 0.952);
+}
+div#a7 {
+    position: fixed;
+    width: 2%;
+    height: 5%;
+    left: 73.5%;
+    top: 24em;
+    background-color: rgba(0, 0, 0, 0.952);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
