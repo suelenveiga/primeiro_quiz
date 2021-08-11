@@ -1,3 +1,3 @@
 # Quiz de filosofia
 
-https://suelenveiga.github.io/biologia/
+https://suelenveiga.github.io/primeiro_quiz/
